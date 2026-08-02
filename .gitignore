@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Secrets — never commit your real configuration.
+# The wildcard also covers backups like .env.backup, which hold the same
+# secrets as .env and are easy to forget about.
+.env*
+!.env.example
+
+# Generated at runtime. We keep the folders themselves (via .gitkeep)
+# but ignore everything a running instance writes into them.
+logs/*
+!logs/.gitkeep
+
+data/*
+!data/.gitkeep

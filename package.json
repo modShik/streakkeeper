@@ -1,0 +1,19 @@
+{
+  "name": "streakkeeper",
+  "version": "2.0.0",
+  "description": "Local automation that maintains a GitHub contribution streak by checking in once per hour and committing at most once per day via the GitHub REST API.",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "auth": "node manage.js auth",
+    "setup": "node setup.js",
+    "manage": "node manage.js"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
