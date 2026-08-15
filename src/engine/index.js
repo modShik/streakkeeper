@@ -75,7 +75,7 @@ async function attemptContribution(config) {
   const commitSha = await putFile(repositoryUrl, branchName, streakLogFilePath, {
     content: updatedContent,
     sha: existingFile ? existingFile.sha : undefined,
-    commitMessage: `chore: streak entry for ${todayDateString}`,
+    commitMessage: `streakkeeper by github/modshik — ${todayDateString}`,
     commitIdentity: buildCommitIdentity(config),
   });
 
